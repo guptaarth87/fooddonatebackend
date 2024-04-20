@@ -9,6 +9,7 @@ const UsersController = require('../Controllers/Users');
 const FoodFormController = require('../Controllers/FoodForm');
 const feedbackController = require('../Controllers/Feedbacks');
 
+router.get('/',FoodFormController.indexFile);
 router.get('/getUsers',UsersController.getUsers);
 router.post('/signup',UsersController.Signup);
 router.post('/login',UsersController.Login);
